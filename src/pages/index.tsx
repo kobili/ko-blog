@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
-import Paragraph from '@/components/Paragraph';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
       <div className='flex flex-col items-center'>
         <h1 className='text-9xl my-9 text-slate-400 drop-shadow-md'>Kobe Li</h1>
+        <Link href="/about" className='text-xl text-gray-500 drop-shadow-sm'>{"> About"}</Link>
       </div>
 
 

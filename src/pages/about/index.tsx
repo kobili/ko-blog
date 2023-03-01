@@ -33,10 +33,42 @@ export default function AboutMe() {
 
             <div>
                 <h1 className="text-4xl mt-10 mb-4">Technical Proficiencies</h1>
-                <h2 className="text-xl">Java Spring-Boot</h2>
-                <h2 className="text-xl">TypeScript Express</h2>
-                <h2 className="text-xl">TypeScript React</h2>
-                <h2 className="text-xl">AWS</h2>
+                <div className="mb-10">
+                    <h2 className="text-xl">Java Spring-Boot</h2>
+                    <Paragraph>
+                        I have extensive professional experience working with Spring Boot micro-services.
+                        I have worked on APIs connected to MySQL and Postgres databases and have experience in containerizing them using Docker and deploying them to AWS.
+                    </Paragraph>
+                </div>
+                <div className="mb-10">
+                    <h2 className="text-xl">TypeScript Express</h2>
+                    <Paragraph>
+                        I have developed many APIs using Express in TypeScript and have connected to Postgres databases using the TypeOrm library and MongoDB databases using
+                        the Mongoose library. I can get an API working so quickly in Express that it's my go-to API prototyping library.
+                    </Paragraph>
+                </div>
+                <div className="mb-10">
+                    <h2 className="text-xl">TypeScript React</h2>
+                    <Paragraph>
+                        I have developed many personal projects in TypeScript React since I picked it up as my primary frontend tool in 2021 and have also worked on a React web
+                        application professionally. In addition to the base React framework, I have also incorporated Redux, Bootstrap and Styled Components in my projects and
+                        have even recently started learning about NextJs (which I used to build this website!).
+                    </Paragraph>
+                </div>
+                <div className="mb-10">
+                    <h2 className="text-xl">AWS</h2>
+                    <Paragraph>
+                        I have used AWS services both in professional environments to host micro-service APIs and databases, as well as in personal and university projects to build serverless APIs.
+                        I have used CDK extensively to write and deploy serverless API Gateway APIs with Lambda and Step Function integration, as well as the SAM CLI to test said APIs locally.
+                        I have also deployed Spring-Boot applications to both EC2 using both ECS and Elastic Beanstalk.
+                    </Paragraph>
+                </div>
+                <div>
+                    <h2 className="text-xl">Git</h2>
+                    <Paragraph>
+                        Are there even developers who don't know git?
+                    </Paragraph>
+                </div>
             </div>
 
             <div>

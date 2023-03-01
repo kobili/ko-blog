@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Paragraph from "@/components/Paragraph";
+import Link from "next/link";
 
 export default function AboutMe() {
     return (
@@ -10,12 +11,12 @@ export default function AboutMe() {
             </Head>
 
             <div>
-                <h1 className='text-4xl mb-4'>About Me</h1>
+                <Header>About Me</Header>
                 <Paragraph>
                     I am an aspiring software engineer specializing in backend web development with experience working fullstack.
                 </Paragraph>
                 <Paragraph>
-                    I have a focus on quality and efficiency in my work, in that I ensure any code I write is easily readable and
+                    I have a focus on quality and efficiency in my work, in that I go to great lengths to ensure any code I write is easily readable and
                     maintainable as well as scalable so that whoever needs to build on top of it is able to dive in with ease.
                 </Paragraph>
                 <Paragraph>
@@ -31,24 +32,24 @@ export default function AboutMe() {
                 </Paragraph>
             </div>
 
-            <div>
-                <h1 className="text-4xl mt-10 mb-4">Technical Proficiencies</h1>
+            <div className="mt-10">
+                <Header>Technical Proficiencies</Header>
                 <div className="mb-10">
-                    <h2 className="text-xl">Java Spring-Boot</h2>
+                    <SubHeader>Java Spring-Boot</SubHeader>
                     <Paragraph>
                         I have extensive professional experience working with Spring Boot micro-services.
                         I have worked on APIs connected to MySQL and Postgres databases and have experience in containerizing them using Docker and deploying them to AWS.
                     </Paragraph>
                 </div>
                 <div className="mb-10">
-                    <h2 className="text-xl">TypeScript Express</h2>
+                    <SubHeader>TypeScript Express</SubHeader>
                     <Paragraph>
                         I have developed many APIs using Express in TypeScript and have connected to Postgres databases using the TypeOrm library and MongoDB databases using
                         the Mongoose library. I can get an API working so quickly in Express that it's my go-to API prototyping library.
                     </Paragraph>
                 </div>
                 <div className="mb-10">
-                    <h2 className="text-xl">TypeScript React</h2>
+                    <SubHeader>TypeScript React</SubHeader>
                     <Paragraph>
                         I have developed many personal projects in TypeScript React since I picked it up as my primary frontend tool in 2021 and have also worked on a React web
                         application professionally. In addition to the base React framework, I have also incorporated Redux, Bootstrap and Styled Components in my projects and
@@ -56,7 +57,7 @@ export default function AboutMe() {
                     </Paragraph>
                 </div>
                 <div className="mb-10">
-                    <h2 className="text-xl">AWS</h2>
+                    <SubHeader>AWS</SubHeader>
                     <Paragraph>
                         I have used AWS services both in professional environments to host micro-service APIs and databases, as well as in personal and university projects to build serverless APIs.
                         I have used CDK extensively to write and deploy serverless API Gateway APIs with Lambda and Step Function integration, as well as the SAM CLI to test said APIs locally.
@@ -64,15 +65,15 @@ export default function AboutMe() {
                     </Paragraph>
                 </div>
                 <div>
-                    <h2 className="text-xl">Git</h2>
+                    <SubHeader>Git</SubHeader>
                     <Paragraph>
-                        Are there even developers who don't know git?
+                        Does anyone NOT know git?
                     </Paragraph>
                 </div>
             </div>
 
-            <div>
-                <h1 className='text-4xl mt-10 mb-4'>Education</h1>
+            <div className="mt-10">
+                <Header>Education</Header>
                 <Paragraph>
                     I started attending the University of British Columbia in 2016 and initially pursued an education in Physics,
                     but in 2018 I took an introductory software construction course where we worked on a Java mobile app.
@@ -89,10 +90,10 @@ export default function AboutMe() {
                 </Paragraph>
             </div>
 
-            <div>
-                <h1 className="text-4xl mt-10 mb-5">Co-op Experience</h1>
+            <div className="mt-10">
+                <Header>Co-op Experience</Header>
                 <div >
-                    <h2 className="text-xl">WiiBid</h2>
+                    <SubHeader>WiiBid</SubHeader>
                     <Paragraph>
                         My first co-op opportunity came in April of 2021. I began working at a fintech startup specializing in an online marketplace for mortgages
                         which would match lenders with prospective homeowners. The web app that I worked on used the ASP.NET MVC framework which invariably involved
@@ -117,7 +118,7 @@ export default function AboutMe() {
                 </div>
 
                 <div className="mt-5">
-                    <h2 className="text-xl">Generac</h2>
+                    <SubHeader>Generac</SubHeader>
                     <Paragraph>
                         My second co-op experience was in August 2021 working at a larger company specializing in selling and manufacturing solar energy equipment.
                     </Paragraph>
@@ -139,7 +140,28 @@ export default function AboutMe() {
                 </div>
             </div>
 
-
+            <div className="mt-10">
+                <Link href="/" className="text-blue-500 drop-shadow-sm">Back home</Link>
+            </div>
         </Layout>
     );
+}
+
+interface HeaderProps {
+    children: string;
+}
+const Header = ({ children }: HeaderProps) => {
+    return (
+        <>
+            <h1 className="text-4xl mb-5 font-bold">{children}</h1>
+        </>
+    );
+}
+
+const SubHeader = ({ children }: HeaderProps) => {
+    return (
+        <>
+            <h2 className="text-xl font-bold">{children}</h2>
+        </>
+    )
 }

@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface ParagraphProps {
-    children: string;
+    children: ReactNode;
 }
 
 export default function Paragraph({ children }: ParagraphProps) {

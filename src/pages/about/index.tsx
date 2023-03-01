@@ -45,7 +45,7 @@ export default function AboutMe() {
                     <SubHeader>TypeScript Express</SubHeader>
                     <Paragraph>
                         I have developed many APIs using Express in TypeScript and have connected to Postgres databases using the TypeOrm library and MongoDB databases using
-                        the Mongoose library. I can get an API working so quickly in Express that it's my go-to API prototyping library.
+                        the Mongoose library. I can get an API working so quickly in Express that it&apos;s my go-to API prototyping library.
                     </Paragraph>
                 </div>
                 <div className="mb-10">
@@ -101,18 +101,18 @@ export default function AboutMe() {
                     </Paragraph>
                     <Paragraph>
                         Since our development team was rather small, I had many chances to work on major user-facing changes. For example, I was given the opportunity
-                        to completely overhaul our application's user registration flow. The existing registration had the user enter their email and confirm it via a link sent to said email.
+                        to completely overhaul our application&apos;s user registration flow. The existing registration had the user enter their email and confirm it via a link sent to said email.
                     </Paragraph>
                     <Paragraph>
                         This change was prompted by the CEO wanting to be able to contact our customers more quickly via their mobile phone. In order to do this, we would need to change our
-                        registration process from verifying the user's email, to verifying their phone number via an SMS code.
+                        registration process from verifying the user&apos;s email, to verifying their phone number via an SMS code.
                     </Paragraph>
                     <Paragraph>
-                        The technical requirements for these changes involved integrating with Twilio's verification service with our backend to send codes through SMS and later verify these codes.
+                        The technical requirements for these changes involved integrating with Twilio&apos;s verification service with our backend to send codes through SMS and later verify these codes.
                         I then had to change the registration UI to prompt the user to enter their phone number, and add a screen for the user to enter the verification code they received.
                     </Paragraph>
                     <Paragraph>
-                        After the code changes were done, before deployment we had to update our user records in our database to pre-populate existing users' records with existing phone number
+                        After the code changes were done, before deployment we had to update our user records in our database to pre-populate existing users&apos; records with existing phone number
                         information to ensure that existing users would not be locked out of their accounts.
                     </Paragraph>
                 </div>
@@ -124,7 +124,7 @@ export default function AboutMe() {
                     </Paragraph>
                     <Paragraph>
                         My role at the company was to help maintain a web application used by installers of our equipment to view and manage installation sites.
-                        Officially my responsibilities were to maintain and update the application's backend micro-services which were written with Java and Sprint-Boot, but my team
+                        Officially my responsibilities were to maintain and update the application&apos;s backend micro-services which were written with Java and Sprint-Boot, but my team
                         had also given me the opportunity to work on the React frontend.
                     </Paragraph>
                     <Paragraph>

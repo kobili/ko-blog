@@ -54,7 +54,7 @@ export default function AboutMe() {
                     <Paragraph>
                         I have developed many personal projects in TypeScript React since I picked it up as my primary frontend tool in 2021 and have also worked on a React web
                         application professionally. In addition to the base React framework, I have also incorporated Redux, Bootstrap and Styled Components in my projects and
-                        have even recently started learning about NextJs (which I used to build <Link href={'https://github.com/kobili/ko-blog'} className="text-blue-500 drop-shadow-sm">this website</Link>!).
+                        have even recently started learning about NextJs (which I used to build <a href={'https://github.com/kobili/ko-blog'} target="_blank" className="text-blue-500 drop-shadow-sm">this website</a>!).
                     </Paragraph>
                 </div>
                 <div className="mb-10">

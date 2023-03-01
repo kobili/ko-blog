@@ -11,6 +11,10 @@ export default function AboutMe() {
                 <title>About Me</title>
             </Head>
 
+            <div className="mb-10">
+                <Link href="/" className="text-blue-500 drop-shadow-sm">Back home</Link>
+            </div>
+
             <div>
                 <Header>About Me</Header>
                 <Paragraph>

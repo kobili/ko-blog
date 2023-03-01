@@ -6,8 +6,8 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
     return (
         <>
-            <div className="flex justify-center">
-                <div className="flex flex-col items-center w-3/6">
+            <div className="flex justify-center py-10">
+                <div className="flex flex-col w-3/6">
                     {children}
                 </div>
             </div>

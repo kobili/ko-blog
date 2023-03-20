@@ -1,7 +1,6 @@
-import Layout from "@/components/Layout";
+import Layout from "@/components/BlogPageLayout";
 import Head from "next/head";
 import Paragraph from "@/components/Paragraph";
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 export default function AboutMe() {

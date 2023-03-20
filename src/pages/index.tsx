@@ -14,6 +14,7 @@ export default function Home() {
       <div className='flex flex-col items-center'>
         <h1 className='text-9xl my-9 text-slate-400 drop-shadow-md'>Kobe Li</h1>
         <Link href="/about" className='text-xl text-blue-400 drop-shadow-sm'>About Me</Link>
+        <Link href="/blog/EB-https" className='text-xl text-blue-400 drop-shadow-sm'>Setting Up HTTPS on an AWS Elastic Beanstalk Express App</Link>
       </div>
 
 

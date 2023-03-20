@@ -11,10 +11,6 @@ export default function AboutMe() {
                 <title>About Me</title>
             </Head>
 
-            <div className="mb-10">
-                <Link href="/" className="text-blue-500 drop-shadow-sm">Back home</Link>
-            </div>
-
             <div>
                 <Header>About Me</Header>
                 <Paragraph>
@@ -143,10 +139,6 @@ export default function AboutMe() {
                         meetings and bi-weekly sprint planning meetings.
                     </Paragraph>
                 </div>
-            </div>
-
-            <div className="mt-10">
-                <Link href="/" className="text-blue-500 drop-shadow-sm">Back home</Link>
             </div>
         </Layout>
     );

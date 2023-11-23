@@ -1,3 +1,5 @@
+'use client'
+
 import BlogPageLayout from "@/components/BlogPageLayout";
 import { Metadata } from "next";
 import Paragraph from "@/components/Paragraph";

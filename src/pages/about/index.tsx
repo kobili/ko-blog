@@ -1,11 +1,11 @@
-import Layout from "@/components/BlogPageLayout";
+import BlogPageLayout from "@/components/BlogPageLayout";
 import Head from "next/head";
 import Paragraph from "@/components/Paragraph";
 import type { ReactNode } from "react";
 
 export default function AboutMe() {
     return (
-        <Layout>
+        <BlogPageLayout>
             <Head>
                 <title>About Me</title>
             </Head>
@@ -139,7 +139,7 @@ export default function AboutMe() {
                     </Paragraph>
                 </div>
             </div>
-        </Layout>
+        </BlogPageLayout>
     );
 }
 

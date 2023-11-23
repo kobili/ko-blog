@@ -1,19 +1,14 @@
-import Layout from "@/components/Layout";
+import BlogPageLayout from "@/components/BlogPageLayout";
 import Head from "next/head";
 import Paragraph from "@/components/Paragraph";
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 export default function AboutMe() {
     return (
-        <Layout>
+        <BlogPageLayout>
             <Head>
                 <title>About Me</title>
             </Head>
-
-            <div className="mb-10">
-                <Link href="/" className="text-blue-500 drop-shadow-sm">Back home</Link>
-            </div>
 
             <div>
                 <Header>About Me</Header>
@@ -144,11 +139,7 @@ export default function AboutMe() {
                     </Paragraph>
                 </div>
             </div>
-
-            <div className="mt-10">
-                <Link href="/" className="text-blue-500 drop-shadow-sm">Back home</Link>
-            </div>
-        </Layout>
+        </BlogPageLayout>
     );
 }
 

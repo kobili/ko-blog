@@ -1,13 +1,9 @@
 'use client'
 
 import BlogPageLayout from "@/components/BlogPageLayout";
-import { Metadata } from "next";
 import Paragraph from "@/components/Paragraph";
 import type { ReactNode } from "react";
 
-export const metadata: Metadata = {
-    title: "About Me"
-}
 
 export default function AboutMe() {
     return (

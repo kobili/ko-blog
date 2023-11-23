@@ -1,15 +1,15 @@
 import BlogPageLayout from "@/components/BlogPageLayout";
-import Head from "next/head";
+import { Metadata } from "next";
 import Paragraph from "@/components/Paragraph";
 import type { ReactNode } from "react";
+
+export const metadata: Metadata = {
+    title: "About Me"
+}
 
 export default function AboutMe() {
     return (
         <BlogPageLayout>
-            <Head>
-                <title>About Me</title>
-            </Head>
-
             <div>
                 <Header>About Me</Header>
                 <Paragraph>
